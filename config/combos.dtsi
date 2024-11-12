@@ -1,0 +1,80 @@
+/*                KEY POSITIONS
+
+  ╭────────────────────────╮ ╭────────────────────────╮
+  │  0   1   2   3   4   5 │ │  6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17 │ │ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29 │ │ 30  31  32  33  34  35 │
+  ╰──────────╮  36  37  38 │ │ 39  40  41 ╭───────────╯
+             ╰─────────────╯ ╰────────────╯            */
+
+/*                KEY POSITIONS TOTEM
+
+       ╭───────────────────╮ ╭────────────────────╮
+       │ 0   1   2   3   4 │ │  5   6   7   8   9 │
+  ╭────╯10  11  12  13  14 │ │ 15  16  17  18  19 ╰───╮
+  │ 30  20  21  22  23  24 │ │ 25  26  27  28  29  39 │
+  ╰──────────╮  32  33  34 │ │ 35  36  37 ╭───────────╯
+             ╰─────────────╯ ╰────────────╯            */
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, IDLEMS) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+            require-prior-idle-ms = <IDLEMS>; \
+        };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+// Spacing combos
+COMBO(ret,        &kp RET,              15 25,         OPTIM ARROW NUMBERS, 150, 0) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return"
+COMBO(ret2,       &kp RET,              13 23,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(del,        &kp DEL,               5 15,         OPTIM NUMBERS, 50, 100)
+COMBO(bspc,       &kp BSPC,              6 16,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(bspcword,   &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS, 50, 50) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
+
+COMBO(cmd-tab,    &kp LG(TAB),          13 14,         OPTIM NUMBERS, 50, 100)
+COMBO(stab,       &kp LS(TAB),          15 16,         OPTIM NUMBERS, 50, 100)
+
+// Shift Combo
+
+// Letters combos
+COMBO(op_cced,    &kp OP_CCED,          16 26,         OPTIM ARROW NUMBERS, 50, 50) //timeout-ms to 50 instead of 70, and require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
+
+// Characters combo
+COMBO(op_circ,    &kp OP_CIR,           17 27,         OPTIM NUMBERS, 50, 50) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
+COMBO(op_hash,    &kp OP_HASH,          26 27,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_at,      &kp OP_AT,            27 28,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_unds,    &kp OP_UNDS,          25 26,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_min,     &kp OP_MIN,           22 23,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_plus,    &kp OP_PLUS,          21 22,         OPTIM ARROW NUMBERS, 50, 100)
+
+// Layers combos
+COMBO(lay-arrow,  &tog ARROW,            1  2  3,      OPTIM ARROW, 50, 100)
+COMBO(lay-number, &tog NUMBERS,          6  7  8,      OPTIM ARROW NUMBERS, 50, 100)
+COMBO(to-0,       &to 0,                21 22 23,      ARROW NUMBERS, 50, 100)
+
+// Editing combos
+COMBO(op-cut,     &kp LG(LBKT),          1 11,         OPTIM, 50, 100)
+COMBO(op-copy,    &kp LG(M),             2 12,         OPTIM, 50, 100)
+COMBO(op-paste,   &kp LG(FSLH),          3 13,         OPTIM, 50, 100)
+COMBO(op-pasttxt, &kp LG(LA(LS(FSLH))),  4 14,         OPTIM, 50, 100) //paste without formatting
+COMBO(op-undo,    &kp LG(OP_Z),         14 24,         OPTIM, 50, 100)
+COMBO(op-redo,    &kp LG(LS(OP_Z)),     12 22,         OPTIM, 50, 100)
+
+// Windows Management combos
+COMBO(applist,      &kp RC(SPACE),      23 24,         OPTIM, 50, 100)
+COMBO(appwindows,   &kp LG(OP_DLR),      3  4,         OPTIM, 50, 100)
+
+// Application specifics shorcuts
+    //OmniPlan
+COMBO(omnipl-identr2, &kp LG(LS(N0)),    13 14,        ARROW, 50, 100) // Also works for workflowy WkfyNext
+COMBO(omnipl-identl2, &kp LG(LS(N9)),    15 16,        ARROW, 50, 100) // Also works for workflowy WkfyPrev
+
+// Escape combos
+COMBO(esc,           &kp ESC,        21 22 23,   0 1 2 4 5, 50, 0) //require-prior-idle-ms to 0 instead of 100, to see if it works better. Sometimes I feel it's difficult to escage several times in a row.
+    };
+};
