@@ -191,6 +191,12 @@
             hold-trigger-key-positions = <KEYS_R THUMBS_L THUMBS_R>;
             hold-trigger-on-release;
         };
+        agrvtab: agrave_tab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp OP_AGRV>, <&kp TAB>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
     }; 
 
 
