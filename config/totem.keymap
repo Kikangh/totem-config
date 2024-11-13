@@ -95,9 +95,9 @@
 };
 
 //Existing Behavior modifications :
-    &mt {
-    hold-while-undecided; //faster mod, used for CMD on left thumb key.
-    };
+//    &mt {
+//    hold-while-undecided; //faster mod, used for CMD on left thumb key.
+//    };
 
 // Key position groups
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 
@@ -330,7 +330,7 @@ display-name = "ARROW"                     ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-            &to 0  &kp OMNIPLIDENTL      &kp OMNIPLIDENTR      &kp  LG(LS(COMMA))    &kp BSPC                      &kp OP_AT      &kp LS(LA(LG(N8))) &none     &q_maj    &q_minuscule         
+            &to 0  &kp OMNIPLIDENTL      &kp OMNIPLIDENTR      &kp  LG(LS(COMMA))    &kp BSPC                      &kp OP_AT      &kp LS(LA(LG(N8))) &none     &q_maj    &q_minuscule
             &trans &kp LCTRL             &kp LALT              &kp  LGUI             &kp ONEPWDQUICK               &kp OP_HASH    &kp LEFT           &kp UP    &kp DOWN  &kp RIGHT
 &bootloader &none  &kp LG(LC(LA(SPACE))) &kp LS(LA(LG(SPACE))) &kp LC(LS(LG(SPACE))) &kp LG(LS(SPACE))             &kp LS(OP_DLR) &kp OP_DLR         &kp PG_UP &kp PG_DN &kp TEXTEXSEARCH &kp TEXTEXOFF
                                          &trans                &trans                &trans                        &trans         &kp HOME           &kp END
