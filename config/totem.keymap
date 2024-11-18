@@ -74,7 +74,7 @@
             label = "ZM_q_minuscul";
             compatible = "zmk,behavior-macro";
             wait-ms = <20>;
-            tap-ms = <20>;
+            tap-ms = <30>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CAPS>
@@ -88,7 +88,7 @@
             label = "ZM_q_maj";
             compatible = "zmk,behavior-macro";
             wait-ms = <20>;
-            tap-ms = <20>;
+            tap-ms = <30>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CAPS>
