@@ -63,10 +63,10 @@
   ╰──────────╮  32  33  34 │ │ 35  36  37 ╭───────────╯
              ╰─────────────╯ ╰────────────╯            */
 
-// debounced, disabled for totem, to enable if necessary
-/* &kscan0 { debounce-press-ms = <17>;
+// debounced, disabled for totem, to enable if necessary. Update 18/11/2024 : getting double letters with Ambiants switches, activating the debounce to mitigate.
+&kscan0 { debounce-press-ms = <17>;
           debounce-release-ms = <17>;
-        }; */
+        };
 
 / {
     macros {
