@@ -52,7 +52,6 @@
 #define ARROW   4
 #define SCREEN  5
 
-#include "combos.dtsi" // This include **has** to be made **after** the layers' define, else it won't compile.
 
 /*                KEY POSITIONS TOTEM
 
@@ -96,8 +95,35 @@
                 , <&macro_tap &kp CAPS>
                 ;
         };
+        win_list: win_list{
+            label = "Current App Window list in Contexts App";
+            compatible = "zmk,behavior-macro";
+            tap-ms = <40>;
+            #binding-cells = <0>;
+            bindings
+                = <macro_press &mo ARROW &kp LGUI>
+                , <macro_tap &kp OP_DLR>
+                , <&macro_pause_for_release>
+                , <macro_release &mo ARROW &kp LGUI>
+                ;
+        }
+        apps_list: apps_list{
+            label = "All Apps Window list in Contexts App";
+            compatible = "zmk,behavior-macro";
+            tap-ms = <40>;
+            #binding-cells = <0>;
+            bindings
+                = <macro_press &mo ARROW &kp LGUI>
+                , <macro_tap &kp TAB>
+                , <&macro_pause_for_release>
+                , <macro_release &mo ARROW &kp LGUI>
+                ;
+        }
     };
 };
+
+#include "combos.dtsi" // This include **has** to be made **after** the layers' and combo define, else it won't compile.
+
 
 //Existing Behavior modifications :
 //    &mt {

@@ -66,8 +66,8 @@ COMBO(op-undo,    &kp LG(OP_Z),         14 25,         OPTIM, 50, 100)
 COMBO(op-redo,    &kp LG(LS(OP_Z)),     12 23,         OPTIM, 50, 100)
 
 // Windows Management combos
-COMBO(applist,      &kp RC(SPACE),      24 25,         OPTIM, 50, 100)
-COMBO(appwindows,   &kp LG(OP_DLR),      3  4,         OPTIM, 50, 100)
+COMBO(applist,      &apps_list,      24 25,         OPTIM, 50, 100) //old combo pointed to : &kp RC(SPACE), doing a test with alt-tab and arrow layer combo
+COMBO(appwindows,   &win_list,          3  4,         OPTIM, 50, 100) //old macro pointed to : &kp LG(OP_DLR), doing a test with combo
 
 // Application specifics shorcuts
     //OmniPlan
