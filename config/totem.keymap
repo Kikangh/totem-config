@@ -95,7 +95,7 @@
                 , <&macro_tap &kp CAPS>
                 ;
         };
-        win_list: win_list{
+        win_list: win_list {
             label = "Current App Window list in Contexts App";
             compatible = "zmk,behavior-macro";
             tap-ms = <40>;
@@ -107,7 +107,7 @@
                 , <&macro_release &mo ARROW &kp LGUI>
                 ;
         }
-        apps_list: apps_list{
+        apps_list: apps_list {
             label = "All Apps Window list in Contexts App";
             compatible = "zmk,behavior-macro";
             tap-ms = <40>;
