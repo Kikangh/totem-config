@@ -101,10 +101,10 @@
             tap-ms = <40>;
             #binding-cells = <0>;
             bindings
-                = <macro_press &mo ARROW &kp LGUI>
-                , <macro_tap &kp OP_DLR>
+                = <&macro_press &mo ARROW &kp LGUI>
+                , <&macro_tap &kp OP_DLR>
                 , <&macro_pause_for_release>
-                , <macro_release &mo ARROW &kp LGUI>
+                , <&macro_release &mo ARROW &kp LGUI>
                 ;
         }
         apps_list: apps_list{
@@ -113,10 +113,10 @@
             tap-ms = <40>;
             #binding-cells = <0>;
             bindings
-                = <macro_press &mo ARROW &kp LGUI>
-                , <macro_tap &kp TAB>
+                = <&macro_press &mo ARROW &kp LGUI>
+                , <&macro_tap &kp TAB>
                 , <&macro_pause_for_release>
-                , <macro_release &mo ARROW &kp LGUI>
+                , <&macro_release &mo ARROW &kp LGUI>
                 ;
         }
     };
