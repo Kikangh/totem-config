@@ -30,44 +30,45 @@
         compatible = "zmk,combos";
 
 // Spacing combos
-COMBO(ret,        &kp RET,              15 26,         OPTIM ARROW NUMBERS, 150, 0) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return"
-COMBO(ret2,       &kp RET,              13 24,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(del,        &kp DEL,               5 15,         OPTIM NUMBERS, 50, 100)
-COMBO(bspc,       &kp BSPC,              6 16,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(bspcword,   &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS, 50, 50) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
+COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW NUMBERS, 150, 0) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return"
+COMBO(ret2,        &kp RET,              13 24,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(del,         &kp DEL,               5 15,         OPTIM NUMBERS, 50, 100)
+COMBO(bspc,        &kp BSPC,              6 16,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(bspcword,    &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS, 50, 50) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
 
-COMBO(cmd-tab,    &kp LG(TAB),          13 14,         OPTIM NUMBERS, 50, 100)
-COMBO(stab,       &kp LS(TAB),          15 16,         OPTIM NUMBERS, 50, 100)
+COMBO(stab,        &kp LS(TAB),          15 16,         OPTIM NUMBERS, 50, 100)
 
 // Shift Combo
 
 // Letters combos
-COMBO(op_cced,    &kp OP_CCED,          16 27,         OPTIM ARROW NUMBERS, 50, 50) //timeout-ms to 50 instead of 70, and require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
+COMBO(op_cced,     &kp OP_CCED,          16 27,         OPTIM ARROW NUMBERS, 50, 50) //timeout-ms to 50 instead of 70, and require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
 
 // Characters combo
-COMBO(op_circ,    &kp OP_CIR,           17 28,         OPTIM NUMBERS, 50, 50) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
-COMBO(op_hash,    &kp OP_HASH,          27 28,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(op_at,      &kp OP_AT,            28 29,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(op_unds,    &kp OP_UNDS,          26 27,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(op_min,     &kp OP_MIN,           23 24,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(op_plus,    &kp OP_PLUS,          22 23,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_circ,     &kp OP_CIR,           17 28,         OPTIM NUMBERS, 50, 50) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests.
+COMBO(op_hash,     &kp OP_HASH,          27 28,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_at,       &kp OP_AT,            28 29,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_unds,     &kp OP_UNDS,          26 27,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_min,      &kp OP_MIN,           23 24,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_plus,     &kp OP_PLUS,          22 23,         OPTIM ARROW NUMBERS, 50, 100)
 
 // Layers combos
-COMBO(lay-arrow,  &tog ARROW,            1  2  3,      OPTIM ARROW, 50, 100)
-COMBO(lay-number, &tog NUMBERS,          6  7  8,      OPTIM ARROW NUMBERS, 50, 100)
-COMBO(to-0,       &to 0,                22 23 24,      ARROW NUMBERS, 50, 100)
+COMBO(lay-arrow,   &tog ARROW,            1  2  3,      OPTIM ARROW, 50, 100)
+COMBO(lay-number,  &tog NUMBERS,          6  7  8,      OPTIM ARROW NUMBERS, 50, 100)
+COMBO(to-0,        &to 0,                22 23 24,      ARROW NUMBERS, 50, 100)
 
 // Editing combos
-COMBO(op-cut,     &kp LG(LBKT),          1 11,         OPTIM, 50, 100)
-COMBO(op-copy,    &kp LG(M),             2 12,         OPTIM, 50, 100)
-COMBO(op-paste,   &kp LG(FSLH),          3 13,         OPTIM, 50, 100)
-COMBO(op-pasttxt, &kp LG(LA(LS(FSLH))),  4 14,         OPTIM, 50, 100) //paste without formatting
-COMBO(op-undo,    &kp LG(OP_Z),         14 25,         OPTIM, 50, 100)
-COMBO(op-redo,    &kp LG(LS(OP_Z)),     12 23,         OPTIM, 50, 100)
+COMBO(op-cut,      &kp LG(LBKT),          1 11,         OPTIM, 50, 100)
+COMBO(op-copy,     &kp LG(M),             2 12,         OPTIM, 50, 100)
+COMBO(op-paste,    &kp LG(FSLH),          3 13,         OPTIM, 50, 100)
+COMBO(op-pasttxt,  &kp LG(LA(LS(FSLH))),  4 14,         OPTIM, 50, 100) //paste without formatting
+COMBO(op-undo,     &kp LG(OP_Z),         14 25,         OPTIM, 50, 100)
+COMBO(op-redo,     &kp LG(LS(OP_Z)),     12 23,         OPTIM, 50, 100)
 
-// Windows Management combos
-COMBO(applist,      &apps_list,      24 25,         OPTIM, 50, 100) //old combo pointed to : &kp RC(SPACE), doing a test with alt-tab and arrow layer combo
-COMBO(appwindows,   &win_list,          3  4,         OPTIM, 50, 100) //old macro pointed to : &kp LG(OP_DLR), doing a test with combo
+// Application switching combos
+COMBO(appwindows,  &win_list,             3  4,         OPTIM, 50, 100) //old macro pointed to : &kp LG(OP_DLR), doing a test with combo, behavior is next/prev window from active app, holding allow selecting between the current app's windows, with arrow keys on right homerow.
+COMBO(applisthold, &apps_list,           13 14,         OPTIM NUMBERS, 50, 100) //old macro pointed to : &kp LG(TAB), now tapping does the same, holding allows to change app with arrow keys on right homerow.
+COMBO(applist,     &kp RC(SPACE),        24 25,         OPTIM, 50, 100)
+
 
 // Application specifics shorcuts
     //OmniPlan
@@ -75,6 +76,6 @@ COMBO(omnipl-identr2, &kp LG(LS(N0)),    13 14,        ARROW, 50, 100) // Also w
 COMBO(omnipl-identl2, &kp LG(LS(N9)),    15 16,        ARROW, 50, 100) // Also works for workflowy WkfyPrev
 
 // Escape combos
-COMBO(esc,           &kp ESC,           22 23 24,      0 1 2 4 5, 50, 0) //require-prior-idle-ms to 0 instead of 100, to see if it works better. Sometimes I feel it's difficult to escage several times in a row.
+COMBO(esc,         &kp ESC,           22 23 24,      0 1 2 4 5, 50, 0) //require-prior-idle-ms to 0 instead of 100, to see if it works better. Sometimes I feel it's difficult to escage several times in a row.
     };
 };
