@@ -33,6 +33,7 @@
 COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW NUMBERS, 150, 0) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return"
 COMBO(ret2,        &kp RET,              13 24,         OPTIM ARROW NUMBERS, 50, 100)
 COMBO(del,         &kp DEL,               5 15,         OPTIM NUMBERS, 50, 100)
+COMBO(bspc,        &kp BSPC,              6 16,         OPTIM ARROW NUMBERS, 50, 0) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing
 COMBO(bspc,        &kp BSPC,              7 17,         OPTIM ARROW NUMBERS, 50, 80) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing
 //COMBO(bspcword,    &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS, 40, 80) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests. 20/11/2024 too many accidental activations => lowering term to 40ms, and increasing require-prior-idle-ms to 80 instead of 50.
 
