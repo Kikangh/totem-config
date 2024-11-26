@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
 // Spacing combos
-COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW NUMBERS, 50, 20) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return" 22/11/2024 term set to 50 to see if better "return activation occurs"
+COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW NUMBERS, 150, 20) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return" 22/11/2024 term set to 50 to see if better "return activation occurs"...26/11/2024 seemed better with 150 - reverted
 COMBO(ret2,        &kp RET,              13 24,         OPTIM ARROW NUMBERS, 50, 100)
 COMBO(del,         &kp DEL,               5 15,         OPTIM NUMBERS, 50, 100)
 COMBO(bspc,        &kp BSPC,              6 16,         OPTIM ARROW NUMBERS, 50, 0) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing
