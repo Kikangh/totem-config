@@ -344,7 +344,7 @@ display-name = "NUMBERS"                   ;
 
           &kp N1               &kp N2           &kp N3          &kp N4          &kp N5                   &kp N6      &kp N7             &kp N8          &kp N9           &kp N0    
           &hll ARROW KP_N1     &hml LCTRL KP_N2 &hml LALT KP_N3 &hml LGUI KP_N4 &kp KP_N5                &kp KP_N6   &hmr RGUI KP_N7    &hmr RALT KP_N8 &hmr RCTRL KP_N9 &kp KP_N0
-&kp CAPS  &kp NON_US_BACKSLASH &kp OP_SCLN      &kp OP_COLN     &trans          &kp LA(OP_T)             &kp OP_COMM &hsr RSHFT OP_HASH &kp OP_AT       &trans           &none     &kp OP_AT
+&kp CAPS  &kp NON_US_BACKSLASH &kp OP_SCLN      &kp OP_COLN     &trans          &kp LA(OP_T)             &kp OP_COMM &hsr RSHFT OP_CCED &kp OP_CIRC       &trans           &none     &kp OP_AT
                                                 &kp RALT        &kp LSHFT       &mt LGUI SPACE           &trans      &kp RALT           &to 0
                         >;
                 };
@@ -368,10 +368,10 @@ display-name = "ARROW"                     ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-            &to 0  &kp OMNIPLIDENTL      &kp OMNIPLIDENTR      &kp LG(LS(COMMA))     &kp BSPC                      &kp OP_AT      &kp LS(LA(LG(N8))) &kp LA(BSPC) &q_minuscule &q_maj
+            &to 0  &kp OMNIPLIDENTL      &kp OMNIPLIDENTR      &kp LG(LS(COMMA))     &kp BSPC                      &kp OP_AT      &kp LS(LA(LG(N8))) &kp LA(BSPC) &q_minuscule &kp BSPC
             &trans &kp LCTRL             &kp LALT              &kp LGUI              &kp ONEPWDQUICK               &kp OP_HASH    &kp LEFT           &kp UP       &kp DOWN     &kp RIGHT
 &bootloader &none  &kp HOOKCPYLK         &kp HOOKCPYMDLK       &kp HOOKTOLINK        &kp HOOK                      &kp LS(OP_DLR) &kp OP_DLR         &kp PG_UP    &kp PG_DN    &kp TEXTEXSEARCH &kp TEXTEXOFF
-                                         &trans                &trans                &trans                        &trans         &kp OP_CCED           &kp OP_CIR 
+                                         &trans                &trans                &trans                        &trans         &trans             &trans 
                         >;
                 };
 
