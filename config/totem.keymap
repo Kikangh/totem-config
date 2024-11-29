@@ -135,7 +135,7 @@
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31  
 #define KEYS_L_SPECIAL 0
 #define THUMBS_L 32 33 34
-#define THUMB_L_SPECIAL 34
+#define THUMB_L_SPECIAL 33
 #define THUMBS_R 35 36 37
 
 
@@ -264,10 +264,10 @@
 // ╷           ╷           ╷              ╷                    ╷            ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
    
-               &agrvtab     &kp OP_J        &kp OP_O             &kp OP_EACU    &kp OP_B                 &kp OP_F        &kp OP_D           &kp OP_L        &kp OP_QUOT     &kp OP_Q
-               &hll ARROW A &hml LCTRL OP_I &hml LALT OP_E       &hml LGUI OP_U &kp OP_COMM              &kp OP_P        &hmr RGUI OP_T     &hmr RALT OP_S  &hmr RCTRL OP_R &kp OP_N
-    &kp F10    &kp OP_K     &kp OP_Y        &kp OP_EGRV          &kp OP_DOT     &hll SCREEN OP_W         &kp OP_G        &hsr RSHFT OP_C    &kp OP_M        &kp OP_H        &kp OP_V &kp BSPC
-                                            &lt LOWER CLIPB_HIST &mt LGUI SPACE &hsl LSHFT TAB           &hlr MOUSE OP_Z &hlr NUMBERS SPACE &kp OP_X
+               &agrvtab     &kp OP_J        &kp OP_O             &kp OP_EACU    &kp OP_B                 &kp OP_F           &kp OP_D         &kp OP_L        &kp OP_QUOT     &kp OP_Q
+               &hll ARROW A &hml LCTRL OP_I &hml LALT OP_E       &hml LGUI OP_U &kp OP_COMM              &kp OP_P           &hmr RGUI OP_T   &hmr RALT OP_S  &hmr RCTRL OP_R &kp OP_N
+    &kp F10    &kp OP_K     &kp OP_Y        &kp OP_EGRV          &kp OP_DOT     &hll SCREEN OP_W         &kp OP_G           &hsr RSHFT OP_C  &kp OP_M        &kp OP_H        &kp OP_V &kp BSPC
+                                            &lt LOWER CLIPB_HIST &hsl LSHFT TAB &mt LGUI SPACE           &hlr NUMBERS SPACE &hlr MOUSE OP_Z  &kp OP_X
                         >;
                 };
 
@@ -319,7 +319,7 @@ display-name = "MOUSE"                     ;
                 &kp LA(LC(LG(LS(OP_EACU)))) &kp LG(LEFT)   &mmv MOVE_UP    &kp LG(RIGHT)   &kp LA(LC(LS(SPACE)))               &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(OP_M)     &kp HOME          
                 &kp RA(RG(OP_COMM))         &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none                               &kp PG_UP   &mkp LCLK      &mkp RCLK      &kp LG(LS(OP_M)) &kp END           
 &none           &kp OUTLKARCHMAIL           &kp LG(N0)     &kp LG(OP_AT)   &kp LG(OP_HASH) &kp LC(LG(SPACE))                   &kp PG_DN   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP     &msc SCRL_RIGHT &trans
-                                                           &trans          &trans          &trans                              &trans      &trans         &trans
+                                                           &trans          &trans          &trans                              &bootloader &trans         &trans
                         >;
                 };
 
@@ -345,7 +345,7 @@ display-name = "NUMBERS"                   ;
           &kp N1               &kp N2           &kp N3          &kp N4          &kp N5                   &kp N6       &kp N7             &kp N8          &kp N9           &kp N0    
           &hll ARROW KP_N1     &hml LCTRL KP_N2 &hml LALT KP_N3 &hml LGUI KP_N4 &kp KP_N5                &kp KP_N6    &hmr RGUI KP_N7    &hmr RALT KP_N8 &hmr RCTRL KP_N9 &kp KP_N0
 &kp CAPS  &kp NON_US_BACKSLASH &kp OP_SCLN      &kp OP_COLN     &trans          &kp LA(OP_T)             &kp OP_COMM  &hsr RSHFT OP_CCED &kp OP_CIR      &trans           &none     &kp OP_AT
-                                                &kp RALT        &mt LGUI SPACE  &kp LSHFT                &bootloader  &trans             &to 0
+                                                &kp RALT        &kp LSHFT       &mt LGUI SPACE           &trans       &kp RALT           &to 0
                         >;
                 };
 
