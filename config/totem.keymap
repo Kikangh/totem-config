@@ -264,10 +264,10 @@
 // ╷           ╷           ╷              ╷                    ╷            ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
    
-               &agrvtab     &kp OP_J        &kp OP_O             &kp OP_EACU    &kp OP_B                 &kp OP_F           &kp OP_D        &kp OP_L        &kp OP_QUOT     &kp OP_Q
-               &hll ARROW A &hml LCTRL OP_I &hml LALT OP_E       &hml LGUI OP_U &kp OP_COMM              &kp OP_P           &hmr RGUI OP_T  &hmr RALT OP_S  &hmr RCTRL OP_R &kp OP_N
-    &kp F10    &kp OP_K     &kp OP_Y        &kp OP_EGRV          &kp OP_DOT     &hll SCREEN OP_W         &kp OP_G           &hsr RSHFT OP_C &kp OP_M        &kp OP_H        &kp OP_V &kp BSPC
-                                            &lt LOWER CLIPB_HIST &hsl LSHFT TAB &mt LGUI SPACE           &hlr NUMBERS SPACE &hlr MOUSE OP_Z &kp OP_X
+               &agrvtab     &kp OP_J        &kp OP_O             &kp OP_EACU    &kp OP_B                 &kp OP_F        &kp OP_D           &kp OP_L        &kp OP_QUOT     &kp OP_Q
+               &hll ARROW A &hml LCTRL OP_I &hml LALT OP_E       &hml LGUI OP_U &kp OP_COMM              &kp OP_P        &hmr RGUI OP_T     &hmr RALT OP_S  &hmr RCTRL OP_R &kp OP_N
+    &kp F10    &kp OP_K     &kp OP_Y        &kp OP_EGRV          &kp OP_DOT     &hll SCREEN OP_W         &kp OP_G        &hsr RSHFT OP_C    &kp OP_M        &kp OP_H        &kp OP_V &kp BSPC
+                                            &lt LOWER CLIPB_HIST &mt LGUI SPACE &hsl LSHFT TAB           &hlr MOUSE OP_Z &hlr NUMBERS SPACE &kp OP_X
                         >;
                 };
 
@@ -293,7 +293,7 @@ display-name = "LOWER"                     ;
         &kp F1        &kp F2         &kp F3        &kp F4      &kp F5               &kp LA(LC(LS(OP_F)))     &kp LA(LC(LS(OP_D)))     &kp LA(LC(LS(OP_L)))      &kp LA(LC(LS(OP_QUOT))) &none                 
         &kp F6        &kp F7         &kp F8        &kp F9      &kp F10              &kp LA(LC(LS(LG(OP_P)))) &kp LA(LC(LS(LEFT)))     &kp LA(LC(LS(UP)))        &kp LA(LC(LS(DOWN)))    &kp LA(LC(LS(RIGHT)))
 &kp F3  &kp RAYCPNAME &kp RAYCPPHONE &kp RAYCPMAIL &kp F11     &kp F12              &kp LA(LC(LS(OP_G)))     &kp LC(LG(OP_Q))         &kp LA(LC(LS(LG(OP_C))))  &kp LA(LC(LS(OP_H)))    &none                 &kp LG(F12)
-                                     &trans        &trans      &trans          &kp LG(LA(LC(LS(LEFT)))) &kp LG(LA(LC(LS(DOWN)))) &kp LG(LA(LC(LS(RIGHT)))) 
+                                     &trans        &trans      &trans               &kp LG(LA(LC(LS(LEFT)))) &kp LG(LA(LC(LS(DOWN)))) &kp LG(LA(LC(LS(RIGHT)))) 
                         >;
                 };
 
@@ -344,7 +344,7 @@ display-name = "NUMBERS"                   ;
 
           &kp N1               &kp N2           &kp N3          &kp N4          &kp N5                   &kp N6      &kp N7             &kp N8          &kp N9           &kp N0    
           &hll ARROW KP_N1     &hml LCTRL KP_N2 &hml LALT KP_N3 &hml LGUI KP_N4 &kp KP_N5                &kp KP_N6   &hmr RGUI KP_N7    &hmr RALT KP_N8 &hmr RCTRL KP_N9 &kp KP_N0
-&kp CAPS  &kp NON_US_BACKSLASH &kp OP_SCLN      &kp OP_COLN     &trans          &kp LA(OP_T)             &kp OP_COMM &hsr RSHFT OP_CCED &kp OP_CIRC       &trans           &none     &kp OP_AT
+&kp CAPS  &kp NON_US_BACKSLASH &kp OP_SCLN      &kp OP_COLN     &trans          &kp LA(OP_T)             &kp OP_COMM &hsr RSHFT OP_HASH &kp OP_AT       &trans           &none     &kp OP_AT
                                                 &kp RALT        &kp LSHFT       &mt LGUI SPACE           &trans      &kp RALT           &to 0
                         >;
                 };
