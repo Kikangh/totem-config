@@ -399,10 +399,10 @@ display-name = "SYMBOL"                   ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-      &none   &none &kp LALT(N9)   &kp LALT(N0)   &kp OP_H                &none &none &none &none &none    
-      &trans  &none &kp N9         &kp N0         &kp OP_J                &none &none &none &none &none
-&none &none   &none &kp LALT(OP_D) &kp LALT(OP_L) &kp OP_H                &none &none &none &none &none &none
-                    &none          &none          &mt LGUI SPACE          &none &none &to 0
+      &none   &none &kp LA(N9)   &kp LA(N0)   &kp OP_H                &none &none &none &none &none    
+      &trans  &none &kp N9       &kp N0       &kp OP_J                &none &none &none &none &none
+&none &none   &none &kp LA(OP_D) &kp LA(OP_L) &kp OP_H                &none &none &none &none &none &none
+                    &none        &none        &mt LGUI SPACE          &none &none &to 0
                         >;
                 };
 
