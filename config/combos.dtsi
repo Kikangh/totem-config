@@ -30,14 +30,14 @@
         compatible = "zmk,combos";
 
 // Spacing combos
-COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW NUMBERS, 150, 20) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return" 22/11/2024 term set to 50 to see if better "return activation occurs"...26/11/2024 seemed better with 150 - reverted
-COMBO(ret2,        &kp RET,              13 24,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(del,         &kp DEL,               5 15,         OPTIM NUMBERS, 50, 100)
-COMBO(bspc,        &kp BSPC,              6 16,         OPTIM ARROW NUMBERS, 50, 0) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing
-COMBO(bspcword,        &kp LA(BSPC),              7 17,         OPTIM ARROW NUMBERS, 30, 80) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing. Trying to make it more of a comittment with 30 timout-ms (term)
+COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW NUMBERS KEYPAD SYM, 150, 20) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return" 22/11/2024 term set to 50 to see if better "return activation occurs"...26/11/2024 seemed better with 150 - reverted
+COMBO(ret2,        &kp RET,              13 24,         OPTIM ARROW NUMBERS KEYPAD SYM, 50, 100)
+COMBO(del,         &kp DEL,               5 15,         OPTIM NUMBERS KEYPAD SYM, 50, 100)
+COMBO(bspc,        &kp BSPC,              6 16,         OPTIM ARROW NUMBERS KEYPAD SYM, 50, 0) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing
+COMBO(bspcword,    &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS KEYPAD SYM, 30, 80) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing. Trying to make it more of a comittment with 30 timout-ms (term)
 //COMBO(bspcword,    &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS, 40, 80) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests. 20/11/2024 too many accidental activations => lowering term to 40ms, and increasing require-prior-idle-ms to 80 instead of 50.
 
-COMBO(stab,        &kp LS(TAB),          15 16,         OPTIM NUMBERS, 50, 100)
+COMBO(stab,        &kp LS(TAB),          15 16,         OPTIM NUMBERS KEYPAD SYM, 50, 100)
 
 // Shift Combo
 
@@ -58,17 +58,17 @@ COMBO(lay-number,  &tog NUMBERS,          6  7  8,      OPTIM ARROW NUMBERS, 50,
 COMBO(to-0,        &to 0,                22 23 24,      ARROW NUMBERS, 50, 100)
 
 // Editing combos
-COMBO(op-cut,      &kp LG(LBKT),          1 11,         OPTIM, 50, 100)
-COMBO(op-copy,     &kp LG(M),             2 12,         OPTIM, 50, 100)
-COMBO(op-paste,    &kp LG(FSLH),          3 13,         OPTIM, 50, 100)
-COMBO(op-pasttxt,  &kp LG(LA(LS(FSLH))),  4 14,         OPTIM, 50, 100) //paste without formatting
-COMBO(op-undo,     &kp LG(OP_Z),         14 25,         OPTIM, 50, 100)
-COMBO(op-redo,     &kp LG(LS(OP_Z)),     12 23,         OPTIM, 50, 100)
+COMBO(op-cut,      &kp LG(LBKT),          1 11,         OPTIM KEYPAD SYM, 50, 100)
+COMBO(op-copy,     &kp LG(M),             2 12,         OPTIM KEYPAD SYM, 50, 100)
+COMBO(op-paste,    &kp LG(FSLH),          3 13,         OPTIM KEYPAD SYM, 50, 100)
+COMBO(op-pasttxt,  &kp LG(LA(LS(FSLH))),  4 14,         OPTIM KEYPAD SYM, 50, 100) //paste without formatting
+COMBO(op-undo,     &kp LG(OP_Z),         14 25,         OPTIM KEYPAD SYM, 50, 100)
+COMBO(op-redo,     &kp LG(LS(OP_Z)),     12 23,         OPTIM KEYPAD SYM, 50, 100)
 
 // Application switching combos
-COMBO(appwindows,  &win_list,            24 25,         OPTIM, 50, 100) //old macro pointed to : &kp LG(OP_DLR), doing a test with combo, behavior is next/prev window from active app, holding allow selecting between the current app's windows, with arrow keys on right homerow.
-COMBO(applisthold, &apps_list,           13 14,         OPTIM NUMBERS, 50, 100) //old macro pointed to : &kp LG(TAB), now tapping does the same, holding allows to change app with arrow keys on right homerow.
-COMBO(applist,     &kp RC(SPACE),         3  4,         OPTIM, 50, 100)
+COMBO(appwindows,  &win_list,            24 25,         OPTIM KEYPAD SYM, 50, 100) //old macro pointed to : &kp LG(OP_DLR), doing a test with combo, behavior is next/prev window from active app, holding allow selecting between the current app's windows, with arrow keys on right homerow.
+COMBO(applisthold, &apps_list,           13 14,         OPTIM NUMBERS KEYPAD SYM, 50, 100) //old macro pointed to : &kp LG(TAB), now tapping does the same, holding allows to change app with arrow keys on right homerow.
+COMBO(applist,     &kp RC(SPACE),         3  4,         OPTIM KEYPAD SYM, 50, 100)
 
 
 // Application specifics shorcuts
@@ -77,6 +77,6 @@ COMBO(omnipl-identr2, &kp LG(LS(N0)),    13 14,        ARROW, 50, 100) // Also w
 COMBO(omnipl-identl2, &kp LG(LS(N9)),    15 16,        ARROW, 50, 100) // Also works for workflowy WkfyPrev
 
 // Escape combos
-COMBO(esc,         &kp ESC,           22 23 24,      0 1 2 4 5, 50, 0) //require-prior-idle-ms to 0 instead of 100, to see if it works better. Sometimes I feel it's difficult to escage several times in a row.
+COMBO(esc,         &kp ESC,           22 23 24,      0 1 2 4 5 6 7, 50, 0) //require-prior-idle-ms to 0 instead of 100, to see if it works better. Sometimes I feel it's difficult to escage several times in a row.
     };
 };
