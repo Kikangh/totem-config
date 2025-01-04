@@ -30,14 +30,14 @@
         compatible = "zmk,combos";
 
 // Spacing combos
-COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW NUMBERS KEYPAD SYMBOL, 150, 20) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return" 22/11/2024 term set to 50 to see if better "return activation occurs"...26/11/2024 seemed better with 150 - reverted
-COMBO(ret2,        &kp RET,              13 24,         OPTIM ARROW NUMBERS KEYPAD SYMBOL, 50, 100)
-COMBO(del,         &kp DEL,               5 15,         OPTIM NUMBERS KEYPAD SYMBOL, 50, 100)
-COMBO(bspc,        &kp BSPC,              6 16,         OPTIM ARROW NUMBERS KEYPAD SYMBOL, 50, 0) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing
-COMBO(bspcword,    &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS KEYPAD SYMBOL, 30, 80) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing. Trying to make it more of a comittment with 30 timout-ms (term)
+COMBO(ret,         &kp RET,              15 26,         OPTIM ARROW KEYPAD SYMBOL NUMBERS, 150, 20) // require-prior-idle-ms to 0 instead of 80, & TERM to 150, to try and prevent accidental input of "pg" instead of sending "Return" 22/11/2024 term set to 50 to see if better "return activation occurs"...26/11/2024 seemed better with 150 - reverted
+COMBO(ret2,        &kp RET,              13 24,         OPTIM ARROW KEYPAD SYMBOL NUMBERS, 50, 100)
+COMBO(del,         &kp DEL,               5 15,         OPTIM KEYPAD SYMBOL NUMBERS, 50, 100)
+COMBO(bspc,        &kp BSPC,              6 16,         OPTIM ARROW KEYPAD SYMBOL NUMBERS, 50, 0) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing
+COMBO(bspcword,    &kp LA(BSPC),          7 17,         OPTIM ARROW KEYPAD SYMBOL NUMBERS, 30, 80) //require-prior-idle-ms to 80 instead of 100, to ease usage while typing. Trying to make it more of a comittment with 30 timout-ms (term)
 //COMBO(bspcword,    &kp LA(BSPC),          7 17,         OPTIM ARROW NUMBERS, 40, 80) //require-prior-idle-ms to 50 instead of 100 to see if it works better during typing tests. 20/11/2024 too many accidental activations => lowering term to 40ms, and increasing require-prior-idle-ms to 80 instead of 50.
 
-COMBO(stab,        &kp LS(TAB),          15 16,         OPTIM NUMBERS KEYPAD SYMBOL, 50, 100)
+COMBO(stab,        &kp LS(TAB),          15 16,         OPTIM KEYPAD SYMBOL NUMBERS, 50, 100)
 
 // Shift Combo
 
