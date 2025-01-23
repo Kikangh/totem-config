@@ -21,7 +21,7 @@
         compatible = "zmk,combos";
 
 // Spacing combos
-COMBO(bspc,       &kp BSPC,              6 16,         OPTIM ARROW KEYPAD SYMBOL NUMBERS, 400) //require-prior-idle-ms disabled with -1, I want it to trigger no matter what. Time-out to 250 in order to get a more permissive trigger of the combo.
+COMBO(bspc,       &kp BSPC,              6 16,         OPTIM ARROW KEYPAD SYMBOL NUMBERS, 40) //require-prior-idle-ms disabled with -1, I want it to trigger no matter what. Time-out to 250 in order to get a more permissive trigger of the combo.
 
             };
 };
