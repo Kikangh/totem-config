@@ -375,7 +375,7 @@ display-name = "KEYPAD"                   ;
 
                &kp KP_EQUAL      &kp KP_N7        &kp KP_N8        &kp KP_N9           &kp KP_PLUS                 &kp N6      &kp N7           &kp N8          &kp N9          &kp N0    
                &hll SYMBOL KP_N0 &hml LCTRL KP_N4 &hml LALT KP_N5  &hml LGUI KP_N6     &kp KP_MINUS                &kp N1      &kp N2           &kp N3          &kp N4          &kp N5
-&kp KP_NUMLOCK &kp KP_SLASH      &kp KP_N1        &kp KP_N2        &kp KP_N3           &kp KP_MULTIPLY             &kp OP_AT   &kp OP_HASH      &none           &none           &none  &none
+&kp KP_NUMLOCK &kp KP_SLASH      &kp KP_N1        &kp KP_N2        &kp KP_N3           &kp KP_MULTIPLY             &kp OP_AT   &kp OP_HASH      &none           &none           &none  &kp BSPC
                                                   &kp KP_DOT       &hsl LSHFT KP_COMMA &mt LGUI SPACE              &none &none &to 0
                         >;
                 };
