@@ -48,8 +48,8 @@ COMBO(op_cir,      &kp OP_CIR,           17 28,         OPTIM NUMBERS, 50, 50) /
 COMBO(op_hash,     &kp OP_HASH,          27 28,         OPTIM ARROW NUMBERS, 50, 100)
 COMBO(op_at,       &kp OP_AT,            28 29,         OPTIM ARROW NUMBERS, 50, 100)
 COMBO(op_unds,     &kp OP_UNDS,          26 27,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(op_min,      &kp OP_MIN,           23 24,         OPTIM ARROW NUMBERS, 50, 100)
-COMBO(op_plus,     &kp OP_PLUS,          22 23,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_min,      &kp OP_MIN,            2  3,         OPTIM ARROW NUMBERS, 50, 100)
+COMBO(op_plus,     &kp OP_PLUS,           1  2,         OPTIM ARROW NUMBERS, 50, 100)
 COMBO(op_oppar,    &kp N9,                8 18,         OPTIM ARROW NUMBERS KEYPAD SYMBOL, 50, 100)
 COMBO(op_clpar,    &kp N0,                9 19,         OPTIM ARROW NUMBERS KEYPAD SYMBOL, 50, 100)
 
@@ -82,6 +82,6 @@ COMBO(omnipl-identl2, &kp LG(LS(N9)),    15 16,        ARROW, 50, 100) // Also w
 // Escape combos
 COMBO(esc,         &kp ESC,           22 23 24,      0 1 2 4 5 6 7, 50, 0) //require-prior-idle-ms to 0 instead of 100, to see if it works better. Sometimes I feel it's difficult to escage several times in a row.
 // System combos
-COMBO(bootloader,  &bootloader,          35 37,      MOUSE, 50, 100) //hoping locality is kept...
+COMBO(bootloader,  &bootloader,          35 37,      MOUSE, 50, 100) //hoping locality is kept... 2025-02-20 : not working, to troubleshoot.
     };
 };
