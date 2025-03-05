@@ -128,7 +128,7 @@
 };
 
 #include "combos.dtsi" // This include **has** to be made **after** the layers' and combo define, else it won't compile.
-#include "combos2.dtsi" // This include **has** to be made **after** the layers' and combo define, else it won't compile.
+// #include "combos2.dtsi" // This include **has** to be made **after** the layers' and combo define, else it won't compile. 05/03/2025 disabled, had issues, and anyways it was not making the combo easier to use.
 
 
 //Existing Behavior modifications :
