@@ -70,9 +70,9 @@ COMBO(op-undo,     &kp LG(OP_Z),         14 25,         OPTIM KEYPAD SYMBOL MOUS
 COMBO(op-redo,     &kp LG(LS(OP_Z)),     12 23,         OPTIM KEYPAD SYMBOL MOUSE, 50, 100)
 
 // Application switching combos
-COMBO(appwindows,  &win_list,            24 25,         OPTIM KEYPAD SYMBOL MOUSE, 50, 100) //old macro pointed to : &kp LG(OP_DLR), doing a test with combo, behavior is next/prev window from active app, holding allow selecting between the current app's windows, with arrow keys on right homerow.
+COMBO(appwindows,  &win_list,             3  4,         OPTIM KEYPAD SYMBOL MOUSE, 50, 100) //old macro pointed to : &kp LG(OP_DLR), doing a test with combo, behavior is next/prev window from active app, holding allow selecting between the current app's windows, with arrow keys on right homerow.
 COMBO(applisthold, &apps_list,           13 14,         OPTIM NUMBERS KEYPAD SYMBOL MOUSE, 50, 100) //old macro pointed to : &kp LG(TAB), now tapping does the same, holding allows to change app with arrow keys on right homerow.
-COMBO(applist,     &kp RC(SPACE),         3  4,         OPTIM KEYPAD SYMBOL MOUSE, 50, 100)
+COMBO(applist,     &kp RC(SPACE),        24 25,         OPTIM KEYPAD SYMBOL MOUSE, 50, 100)
 
 
 // Application specifics shorcuts
