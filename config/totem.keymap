@@ -429,7 +429,7 @@ display-name = "ARROW"                     ;
             &to 0  &kp OMNIPLIDENTL      &kp OMNIPLIDENTR      &kp LG(LS(COMMA))     &kp BSPC                      &kp LS(LA(LG(N8))) &kp BSPC     &kp LA(BSPC) &q_maj   &q_minuscule
             &trans &kp LCTRL             &kp LALT              &kp LGUI              &kp ONEPWDQUICK               &kp OP_CIR         &kp LEFT     &kp UP       &kp DOWN &kp RIGHT
 &bootloader &none  &kp HOOKCPYLK         &kp HOOKCPYMDLK       &kp HOOKTOLINK        &kp HOOK                      &kp LS(OP_DLR)     &kp OP_CCED  &kp OP_DLR   &trans   &kp TEXTEXSEARCH &kp TEXTEXOFF
-                                         &trans                &trans                &trans                        &trans             &trans       &trans 
+                                         &kp ESC                &trans                &trans                        &trans             &trans       &trans 
                         >;
                 };
 
