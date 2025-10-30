@@ -297,7 +297,7 @@ display-name = "LOWER"                     ;
 
         &kp F1        &kp F2         &kp F3        &kp F4      &kp F5               &kp LA(LC(LS(OP_F)))     &kp LA(LC(LS(OP_D)))     &kp LA(LC(LS(OP_L)))      &kp LA(LC(LS(OP_QUOT))) &none                 
         &kp F6        &kp F7         &kp F8        &kp F9      &kp F10              &kp LA(LC(LS(LG(OP_P)))) &kp LA(LC(LS(LEFT)))     &kp LA(LC(LS(UP)))        &kp LA(LC(LS(DOWN)))    &kp LA(LC(LS(RIGHT)))
-&kp F3  &kp RAYCPNAME &kp RAYCPPHONE &kp RAYCPMAIL &kp F11     &kp F12              &kp LA(LC(LS(OP_G)))     &kp LC(LG(OP_Q))         &kp LA(LC(LS(LG(OP_C))))  &kp LA(LC(LS(OP_H)))    &none                 &kp LG(F12)
+&kp F3  &kp RAYCPNAME &kp RAYCPPHONE &kp RAYCPMAIL &kp F11     &kp F12              &kp LA(LC(LS(OP_G)))     &hsr RSHFT LC(LG(OP_Q))         &kp LA(LC(LS(LG(OP_C))))  &kp LA(LC(LS(OP_H)))    &none                 &kp LG(F12)
                                      &trans        &trans      &trans               &kp LG(LA(LC(LS(LEFT)))) &kp LG(LA(LC(LS(DOWN)))) &kp LG(LA(LC(LS(RIGHT)))) 
                         >;
                 };
