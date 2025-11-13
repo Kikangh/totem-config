@@ -124,6 +124,18 @@
                 , <&macro_release &mo ARROW &kp LGUI>
                 ;
         };
+        spacecolon: spacecolon {
+            label = "Espace insécable + :";
+            compatible = "zmk,behavior-macro";
+            tap-ms = <40>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp OP_DOT>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
     };
 };
 
@@ -427,7 +439,7 @@ display-name = "ARROW"                     ;
 
             &to 0  &kp OMNIPLIDENTL      &kp OMNIPLIDENTR      &kp LG(LS(OP_M)) &kp BSPC                      &kp LS(LA(LG(N8))) &none       &kp LA(BSPC) &kp LG(BSPC) &kp BSPC
             &trans &kp LCTRL             &kp LALT              &kp LGUI         &kp ONEPWDQUICK               &kp OP_CIR         &kp LEFT    &kp UP       &kp DOWN     &kp RIGHT
-&bootloader &none  &kp HOOKCPYLK         &kp HOOKCPYMDLK       &kp HOOKTOLINK   &kp LS(F3)                    &kp LS(OP_DLR)     &kp OP_CCED &kp OP_DLR   &trans       &kp TEXTEXSEARCH &kp TEXTEXOFF
+&bootloader &none  &kp HOOKCPYLK         &kp HOOKCPYMDLK       &spacecolon      &kp LS(F3)                    &kp LS(OP_DLR)     &kp OP_CCED &kp OP_DLR   &trans       &kp TEXTEXSEARCH &kp TEXTEXOFF
                                          &kp ESC               &trans           &trans                        &trans             &trans      &trans 
                         >;
                 };
