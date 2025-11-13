@@ -133,6 +133,7 @@
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp SPACE>
                 , <&macro_tap &kp OP_DOT>
+                , <&macro_tap &kp SPACE>
                 , <&macro_release &kp LSHFT>
                 ;
         };
