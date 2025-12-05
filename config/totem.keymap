@@ -34,8 +34,11 @@
     //Outlook
     #define OUTLKARCHMAIL LC(OP_E)
     #define OUTLKFILEMAIL LG(LS(OP_M))
-
     #define OUTLKNEWMAINWINDOW LA(LG(LS(OP_N)))
+    //MS Office
+    #define CASE-CYCLE LS(F3)
+    //MS Teams
+    #define TEAMS-MUTE LG(LS(OP_M))
     //TextExpander
     #define TEXTEXOFF RC(RA(LS(RG(OP_T))))
     #define TEXTEXSEARCH RG(LS(LA(OP_F)))
@@ -438,10 +441,10 @@ display-name = "ARROW"                     ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-            &to 0  &kp OMNIPLIDENTL      &kp OMNIPLIDENTR      &kp LG(LS(OP_M)) &kp BSPC                      &kp LS(LA(LG(N8))) &none       &kp LA(BSPC) &kp LG(BSPC) &kp BSPC
-            &trans &kp LCTRL             &kp LALT              &kp LGUI         &kp ONEPWDQUICK               &kp OP_CIR         &kp LEFT    &kp UP       &kp DOWN     &kp RIGHT
-&bootloader &none  &kp HOOKCPYLK         &kp HOOKCPYMDLK       &spacecolon      &kp LS(F3)                    &kp LS(OP_DLR)     &kp OP_CCED &kp OP_DLR   &trans       &kp TEXTEXSEARCH &kp TEXTEXOFF
-                                         &kp ESC               &trans           &trans                        &trans             &trans      &trans 
+            &to 0  &kp OMNIPLIDENTL &kp OMNIPLIDENTR &kp TEAMS-MUTE &kp BSPC                   &kp LS(LA(LG(N8))) &none       &kp LA(BSPC) &kp LG(BSPC) &kp BSPC
+            &trans &kp LCTRL        &kp LALT         &kp LGUI       &kp ONEPWDQUICK            &kp OP_CIR         &kp LEFT    &kp UP       &kp DOWN     &kp RIGHT
+&bootloader &none  &kp LC(LEFT)     &kp LC(RIGHT)    &spacecolon    &kp CASE-CYCLE             &kp LS(OP_DLR)     &kp OP_CCED &kp OP_DLR   &trans       &kp TEXTEXSEARCH &kp TEXTEXOFF
+                                    &kp ESC          &trans         &trans                     &trans             &trans      &trans 
                         >;
                 };
 
