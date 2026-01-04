@@ -31,6 +31,7 @@
     #define RAYCPMAIL  LG(LS(OP_COMM))
     #define NEWRAYNOTE LA(LG(LS(OP_N)))
     #define RAYEMOJI   LC(LG(SPACE))
+    #define RAYSRCHAPPMENU LS(LA(LG(N8)))
     //Outlook
     #define OUTLKARCHMAIL LC(OP_E)
     #define OUTLKFILEMAIL LG(LS(OP_M))
@@ -441,10 +442,10 @@ display-name = "ARROW"                     ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-            &to 0  &kp OMNIPLIDENTL &kp OMNIPLIDENTR &kp TEAMSMUTE &kp BSPC                   &kp LS(LA(LG(N8))) &none       &kp LA(BSPC) &kp LG(BSPC) &kp BSPC
-            &trans &kp LCTRL        &kp LALT         &kp LGUI       &kp ONEPWDQUICK            &kp OP_CIR         &kp LEFT    &kp UP       &kp DOWN     &kp RIGHT
-&bootloader &none  &kp LC(LEFT)     &kp LC(RIGHT)    &spacecolon    &kp CASECYCLE             &kp LS(OP_DLR)     &kp OP_CCED &kp OP_DLR   &trans       &kp TEXTEXSEARCH &kp TEXTEXOFF
-                                    &kp ESC          &trans         &trans                     &trans             &trans      &trans 
+            &to 0  &kp OMNIPLIDENTL &kp OMNIPLIDENTR &kp TEAMSMUTE &kp BSPC                   &kp RAYSRCHAPPMENU &kp BSPC    &kp LA(BSPC) &kp LG(BSPC) &kp none
+            &trans &kp LCTRL        &kp LALT         &kp LGUI       &kp ONEPWDQUICK           &kp RET            &kp LEFT    &kp UP       &kp DOWN     &kp RIGHT
+&bootloader &none  &kp LC(LEFT)     &kp LC(RIGHT)    &spacecolon    &kp CASECYCLE             &kp OP_EURO        &kp OP_CCED &kp OP_DLR   &trans       &kp TEXTEXSEARCH &kp TEXTEXOFF
+                                    &kp ESC          &trans         &trans                    &trans             &trans      &trans 
                         >;
                 };
 
