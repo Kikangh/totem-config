@@ -442,9 +442,9 @@ display-name = "ARROW"                     ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-            &to 0  &kp OMNIPLIDENTL &kp OMNIPLIDENTR &kp TEAMSMUTE  &kp BSPC                   &kp RAYSRCHAPPMENU &kp BSPC    &kp LA(BSPC) &kp LG(BSPC) &none
-            &trans &kp LCTRL        &kp LALT         &kp LGUI       &kp ONEPWDQUICK           &kp RET            &kp LEFT    &kp UP       &kp DOWN      &kp RIGHT
-&bootloader &none  &kp LC(LEFT)     &kp LC(RIGHT)    &spacecolon    &kp CASECYCLE             &kp OP_EURO        &kp OP_CCED &kp OP_DLR   &trans        &kp TEXTEXSEARCH &kp TEXTEXOFF
+            &to 0  &kp OMNIPLIDENTL &kp OMNIPLIDENTR &kp SCROLLLOCK &kp BSPC                  &kp RAYSRCHAPPMENU &kp BSPC    &kp LA(BSPC) &kp LG(BSPC) &none
+            &trans &kp LCTRL        &kp LALT         &kp LGUI       &kp ONEPWDQUICK           &kp RET            &kp LEFT    &kp UP       &kp DOWN     &kp RIGHT
+&bootloader &none  &kp LC(LEFT)     &kp LC(RIGHT)    &spacecolon    &kp CASECYCLE             &kp OP_EURO        &kp OP_CCED &kp OP_DLR   &trans       &kp TEXTEXSEARCH &kp TEXTEXOFF
                                     &kp ESC          &trans         &trans                    &trans             &trans      &trans 
                         >;
                 };
