@@ -288,7 +288,7 @@
    
                &agrvtab     &kp OP_J        &kp OP_O             &kp OP_EACU    &kp OP_B                 &kp OP_F           &kp OP_D        &kp OP_L        &kp OP_QUOT     &kp OP_Q
                &hll ARROW A &hml LCTRL OP_I &hml LALT OP_E       &hml LGUI OP_U &kp OP_COMM              &kp OP_P           &hmr RGUI OP_T  &hmr RALT OP_S  &hmr RCTRL OP_R &kp OP_N
-    &kp F10    &kp OP_K     &kp OP_Y        &kp OP_EGRV          &kp OP_DOT     &hll SCREEN OP_W         &kp OP_G           &hsr RSHFT OP_C &kp OP_M        &kp OP_H        &kp OP_V &kp BSPC
+    &kp F10    &hll MOUSE OP_K     &kp OP_Y        &kp OP_EGRV          &kp OP_DOT     &hll SCREEN OP_W         &kp OP_G           &hsr RSHFT OP_C &kp OP_M        &kp OP_H        &kp OP_V &kp BSPC
                                             &lt LOWER CLIPB_HIST &hsl LSHFT TAB &mt LGUI SPACE           &hlr NUMBERS SPACE &hlr MOUSE OP_Z &kp OP_X
                         >;
                 };
