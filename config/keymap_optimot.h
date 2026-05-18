@@ -44,7 +44,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define OP_DLR  GRAVE // $
+#define OP_DLR  GRAVE  // $
 #define OP_LDAQ N1    // «
 #define OP_RDAQ N2    // »
 #define OP_DQUO N3    // "
@@ -86,11 +86,11 @@
 //#define OP_Z    BSLH  // Z Use this with my tweaked version of Optimot 1.5
 #define OP_CCED    BSLH  // Ç Use this with Optimot 1.8.1
 // Row 4
-#define OP_K    Z     // K
-#define OP_Y    X     // Y
-#define OP_EGRV C     // È
-#define OP_DOT  V     // .
-#define OP_W    B     // W
+#define OP_K    NUBS  // K NonUSBacKslash
+#define OP_Y    Z     // Y
+#define OP_EGRV X     // È
+#define OP_DOT  C     // .
+#define OP_W    V     // W
 #define OP_G    N     // G
 #define OP_C    M     // C
 #define OP_M    COMMA // M
